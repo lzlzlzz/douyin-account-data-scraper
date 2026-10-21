@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "douyin-daily-contributions"
+version = "0.1.0"
+description = "通过抖音创作者中心内部 API 抓取每日投稿量和粉丝数据"
+requires-python = ">=3.11"
+dependencies = ["browser-cookie3>=0.20"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

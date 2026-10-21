@@ -1,0 +1,12 @@
+# 抖音账号管理 + 数据抓取系统 · Python 依赖
+# 环境要求：Windows 10/11 + Python 3.12+（建议 3.13）
+# 安装：pip install -r requirements.txt
+#
+# 说明：抓取 / 入库 / 巡检核心均为纯标准库（urllib），以下依赖仅为【机器人 login_bot】所需
+
+dingtalk-stream==0.24.3     # 钉钉 Stream 机器人 SDK（群内 @机器人 交互）
+requests==2.34.2            # HTTP 客户端（钉钉 AI 表 REST API）
+python-dotenv==1.2.4        # .env 配置加载
+psutil==7.2.2               # 进程监控（看门狗自动重启）
+playwright==1.61.0          # 浏览器自动化（扫码授权；优先用系统 Chrome）
+cos-python-sdk-v5==1.9.44   # 腾讯云 COS 图床（二维码外链发送到群）

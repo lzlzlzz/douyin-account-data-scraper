@@ -1,0 +1,10 @@
+# 真实配置与运行产物，禁止提交
+.env
+*.env.local
+output/
+*.log
+*.session
+__pycache__/
+*.pyc
+.venv/
+dy-browser-profile/
